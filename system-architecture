@@ -1,0 +1,60 @@
+┌──────────────────────────────┐
+│       Crypto Exchanges       │
+│  Binance • Coinbase • Kraken │
+└───────────────┬──────────────┘
+                │
+        Real-time Price APIs
+                │
+                ▼
+┌──────────────────────────────┐
+│      Data Ingestion Layer    │
+│   (R & Python API Clients)   │
+│  • Binance API               │
+│  • Coinbase API              │
+│  • Kraken API                │
+└───────────────┬──────────────┘
+                │
+        Normalized Price Feed
+                │
+                ▼
+┌──────────────────────────────┐
+│    Unified Market Dataset    │
+│  • Symbols normalized        │
+│  • Exchange-wise prices      │
+│  • Timestamps                │
+└───────────────┬──────────────┘
+                │
+        ┌───────┴────────┐
+        │                │
+        ▼                ▼
+┌──────────────────┐   ┌─────────────────────────┐
+│ Quant Research   │   │ Arbitrage Engine        │
+│ Engine (R)       │   │ (R + Python)            │
+│                  │   │                         │
+│ • Volatility     │   │ • Min-max price scan    │
+│ • Correlation    │   │ • Spread calculation    │
+│ • Spread stats   │   │ • Fees & net profit     │
+└─────────┬────────┘   └───────────┬─────────────┘
+          │                        │
+          └────────────┬───────────┘
+                       ▼
+        ┌──────────────────────────────┐
+        │   Market Intelligence Layer  │
+        │ • Ranked arbitrage signals   │
+        │ • Risk & inefficiency metrics│
+        └───────────────┬──────────────┘
+                        │
+                        ▼
+        ┌──────────────────────────────┐
+        │   Streamlit Trading Terminal │
+        │ • Live prices                │
+        │ • Arbitrage alerts           │
+        │ • ROI & profit metrics       │
+        │ • Interactive charts         │
+        └───────────────┬──────────────┘
+                        │
+                        ▼
+              ┌────────────────┐
+              │  Trader / User │
+              │  Decision Layer│
+              └────────────────┘

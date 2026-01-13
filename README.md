@@ -16,6 +16,7 @@ Layer	File	Purpose
 Together, they form a professional-grade crypto market intelligence system.
 
 🧠 Core Capabilities
+
 🔹 1. Real-Time Exchange Price Feeds
 
 Prices are fetched live from:

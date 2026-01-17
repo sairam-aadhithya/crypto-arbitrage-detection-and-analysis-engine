@@ -1,0 +1,13 @@
+Package: cryptoMarketIntelligence
+Type: Project
+Title: Cryptocurrency Arbitrage and Market Analysis System
+Version: 0.1.0
+Author: Sairam Aadhithya
+Maintainer: Sairam Aadhithya
+Description: A cryptocurrency market intelligence project combining real-time
+    arbitrage detection, volatility modeling, spread analysis, and correlation
+    analytics using R and Python. Includes quantitative research pipelines in R
+    and an interactive Streamlit dashboard for live monitoring.
+License: MIT
+Encoding: UTF-8
+LazyData: true
